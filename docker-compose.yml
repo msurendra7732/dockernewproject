@@ -6,10 +6,3 @@ services:
       - "81:80"
     deploy:
       replicas: 3
-
-  tickets:
-     image: surendra/ticketpaytm:latest
-     ports:
-      - "82:8o"
-     deploy:
-       replicas: 3
