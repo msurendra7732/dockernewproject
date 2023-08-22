@@ -12,18 +12,18 @@ services:
      ports:
       - "82:8o"
      deploy:
-       replicas:3
+       replicas: 3
 
   bills:
     image: surendram/billspaytm:latest
     ports:
       - "83:80"
     deploy:
-      replicas:3
+      replicas: 3
 
 recharge:
    image: surendram/rechargepaytm:latest
    ports:
     - "84:80"
    deploy:
-     replicas:3
+     replicas: 3
