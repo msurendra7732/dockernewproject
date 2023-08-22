@@ -1,9 +1,29 @@
 version: '3'
 services:
   movies:
-    image: surendram/ticketspaytm:latest
+    image: surendram/moviespaytm:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
+  tickets:
+     image:surendra/ticketpaytm:latest
+     ports:
+      - "82:8o"
+     deploy:
+       replicas:3
+
+  bills:
+    image:surendram/billspaytm:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas:3
+
+recharge:
+   image:surendram/rechargepaytm:latest
+   ports:
+    - "84:80"
+   deploy:
+     replicas:3
